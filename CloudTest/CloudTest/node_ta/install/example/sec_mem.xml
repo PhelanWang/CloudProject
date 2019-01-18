@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sec_mem>
+	<!-- dump-memory exec file's path : /usr/local/bin/dump-memory -->
+	<dm_path>dump-memory</dm_path>
+	<!-- getGUID exec file's path : /usr/local/bin/getGUID-->
+	<gg_path>getGUID</gg_path>
+	<!-- data tmp storage -->
+	<tmp_dir>/var/lib/node_ta/sec_mem/tmp</tmp_dir>
+	<!-- user && password for libvmi -->
+	<libvmi_user>admin</libvmi_user>
+	<libvmi_password>admin</libvmi_password>
+</sec_mem>

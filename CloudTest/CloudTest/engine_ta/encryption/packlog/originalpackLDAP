@@ -1,0 +1,1676 @@
+Frame 4216: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.613153415 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.613153415 seconds
+    [Time delta from previous captured frame: 0.000699028 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.193621552 seconds]
+    Frame Number: 4216
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x4166 (16742)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3aa3 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 1, Ack: 1318, Len: 24
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 25    (relative sequence number)]
+    Acknowledgment number: 1318    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0xd408 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391417, TSecr 446567687
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391417
+            Timestamp echo reply: 446567687
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4204]
+        [The RTT to ACK the segment was: 0.002149374 seconds]
+        [Bytes in flight: 24]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4205]
+        [Time: 0.002138874 seconds]
+
+Frame 4217: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.613153415 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.613153415 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.193621552 seconds]
+    Frame Number: 4217
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x4166 (16742)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3aa3 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 1, Ack: 1318, Len: 24
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 25    (relative sequence number)]
+    Acknowledgment number: 1318    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0xd408 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391417, TSecr 446567687
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391417
+            Timestamp echo reply: 446567687
+    [SEQ/ACK analysis]
+        [Bytes in flight: 24]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4205]
+        [Time: 0.002138874 seconds]
+
+Frame 4234: 124 bytes on wire (992 bits), 124 bytes captured (992 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.614725930 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.614725930 seconds
+    [Time delta from previous captured frame: 0.000492844 seconds]
+    [Time delta from previous displayed frame: 0.001572515 seconds]
+    [Time since reference or first frame: 12.195194067 seconds]
+    Frame Number: 4234
+    Frame Length: 124 bytes (992 bits)
+    Capture Length: 124 bytes (992 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 108
+    Identification: 0x4167 (16743)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a82 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 25, Ack: 1342, Len: 56
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 25    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1342    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0x6031 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391418, TSecr 446567690
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391418
+            Timestamp echo reply: 446567690
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4224]
+        [The RTT to ACK the segment was: 0.001026298 seconds]
+        [Bytes in flight: 56]
+    [PDU Size: 56]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 988150831
+                        krb5_sgn_cksum: 5e78881249124362541a4559
+
+Frame 4235: 124 bytes on wire (992 bits), 124 bytes captured (992 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.614725930 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.614725930 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.195194067 seconds]
+    Frame Number: 4235
+    Frame Length: 124 bytes (992 bits)
+    Capture Length: 124 bytes (992 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 108
+    Identification: 0x4167 (16743)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a82 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 25, Ack: 1342, Len: 56
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 25    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1342    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0x6031 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391418, TSecr 446567690
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391418
+            Timestamp echo reply: 446567690
+    [SEQ/ACK analysis]
+        [Bytes in flight: 56]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 56]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 988150831
+                        krb5_sgn_cksum: 5e78881249124362541a4559
+
+Frame 4238: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.616465388 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.616465388 seconds
+    [Time delta from previous captured frame: 0.001093295 seconds]
+    [Time delta from previous displayed frame: 0.001739458 seconds]
+    [Time since reference or first frame: 12.196933525 seconds]
+    Frame Number: 4238
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x4168 (16744)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3aa1 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 81, Ack: 1398, Len: 24
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 81    (relative sequence number)
+    [Next sequence number: 105    (relative sequence number)]
+    Acknowledgment number: 1398    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 259
+    [Calculated window size: 66304]
+    [Window size scaling factor: 256]
+    Checksum: 0xd171 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391419, TSecr 446567691
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391419
+            Timestamp echo reply: 446567691
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4236]
+        [The RTT to ACK the segment was: 0.001104092 seconds]
+        [Bytes in flight: 24]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4237]
+        [Time: 0.001093295 seconds]
+
+Frame 4239: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.616465388 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.616465388 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.196933525 seconds]
+    Frame Number: 4239
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x4168 (16744)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3aa1 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 81, Ack: 1398, Len: 24
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 81    (relative sequence number)
+    [Next sequence number: 105    (relative sequence number)]
+    Acknowledgment number: 1398    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 259
+    [Calculated window size: 66304]
+    [Window size scaling factor: 256]
+    Checksum: 0xd171 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391419, TSecr 446567691
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391419
+            Timestamp echo reply: 446567691
+    [SEQ/ACK analysis]
+        [Bytes in flight: 24]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4237]
+        [Time: 0.001093295 seconds]
+
+Frame 4246: 712 bytes on wire (5696 bits), 712 bytes captured (5696 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.619281021 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.619281021 seconds
+    [Time delta from previous captured frame: 0.001814356 seconds]
+    [Time delta from previous displayed frame: 0.002815633 seconds]
+    [Time since reference or first frame: 12.199749158 seconds]
+    Frame Number: 4246
+    Frame Length: 712 bytes (5696 bits)
+    Capture Length: 712 bytes (5696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 696
+    Identification: 0x4169 (16745)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3834 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 105, Ack: 1853, Len: 644
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 105    (relative sequence number)
+    [Next sequence number: 749    (relative sequence number)]
+    Acknowledgment number: 1853    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 258
+    [Calculated window size: 66048]
+    [Window size scaling factor: 256]
+    Checksum: 0xd1a3 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391419, TSecr 446567693
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391419
+            Timestamp echo reply: 446567693
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4244]
+        [The RTT to ACK the segment was: 0.001827913 seconds]
+        [Bytes in flight: 644]
+    [PDU Size: 644]
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000003ae5fc30674429258cea0a53...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 988150832
+                krb5_sgn_cksum: 674429258cea0a53ce564d9df15751a7a110948cabb64972...
+        GSS-API Encrypted payload (580 bytes)
+
+Frame 4247: 712 bytes on wire (5696 bits), 712 bytes captured (5696 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.619281021 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.619281021 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.199749158 seconds]
+    Frame Number: 4247
+    Frame Length: 712 bytes (5696 bits)
+    Capture Length: 712 bytes (5696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 696
+    Identification: 0x4169 (16745)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3834 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35311 (35311), Seq: 105, Ack: 1853, Len: 644
+    Source port: ldap (389)
+    Destination port: 35311 (35311)
+    [Stream index: 33]
+    Sequence number: 105    (relative sequence number)
+    [Next sequence number: 749    (relative sequence number)]
+    Acknowledgment number: 1853    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 258
+    [Calculated window size: 66048]
+    [Window size scaling factor: 256]
+    Checksum: 0xd1a3 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391419, TSecr 446567693
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391419
+            Timestamp echo reply: 446567693
+    [SEQ/ACK analysis]
+        [Bytes in flight: 644]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 644]
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000003ae5fc30674429258cea0a53...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 988150832
+                krb5_sgn_cksum: 674429258cea0a53ce564d9df15751a7a110948cabb64972...
+        GSS-API Encrypted payload (580 bytes)
+
+Frame 4345: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.648448502 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.648448502 seconds
+    [Time delta from previous captured frame: 0.000195290 seconds]
+    [Time delta from previous displayed frame: 0.029167481 seconds]
+    [Time since reference or first frame: 12.228916639 seconds]
+    Frame Number: 4345
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x417c (16764)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a8d [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 1, Ack: 1318, Len: 24
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 25    (relative sequence number)]
+    Acknowledgment number: 1318    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0xa7ff [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567722
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567722
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4341]
+        [The RTT to ACK the segment was: 0.002118362 seconds]
+        [Bytes in flight: 24]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4342]
+        [Time: 0.002101245 seconds]
+
+Frame 4346: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.648448502 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.648448502 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.228916639 seconds]
+    Frame Number: 4346
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x417c (16764)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a8d [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 1, Ack: 1318, Len: 24
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 25    (relative sequence number)]
+    Acknowledgment number: 1318    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0xa7ff [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567722
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567722
+    [SEQ/ACK analysis]
+        [Bytes in flight: 24]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4342]
+        [Time: 0.002101245 seconds]
+
+Frame 4351: 124 bytes on wire (992 bits), 124 bytes captured (992 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.649753728 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.649753728 seconds
+    [Time delta from previous captured frame: 0.001046284 seconds]
+    [Time delta from previous displayed frame: 0.001305226 seconds]
+    [Time since reference or first frame: 12.230221865 seconds]
+    Frame Number: 4351
+    Frame Length: 124 bytes (992 bits)
+    Capture Length: 124 bytes (992 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 108
+    Identification: 0x417d (16765)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a6c [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 25, Ack: 1342, Len: 56
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 25    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1342    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0x8498 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567725
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567725
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4349]
+        [The RTT to ACK the segment was: 0.001053571 seconds]
+        [Bytes in flight: 56]
+    [PDU Size: 56]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 792742303
+                        krb5_sgn_cksum: c5f4a65b64437fce8015a9c1
+
+Frame 4352: 124 bytes on wire (992 bits), 124 bytes captured (992 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.649753728 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.649753728 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.230221865 seconds]
+    Frame Number: 4352
+    Frame Length: 124 bytes (992 bits)
+    Capture Length: 124 bytes (992 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 108
+    Identification: 0x417d (16765)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a6c [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 25, Ack: 1342, Len: 56
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 25    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1342    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 260
+    [Calculated window size: 66560]
+    [Window size scaling factor: 256]
+    Checksum: 0x8498 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567725
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567725
+    [SEQ/ACK analysis]
+        [Bytes in flight: 56]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 56]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 792742303
+                        krb5_sgn_cksum: c5f4a65b64437fce8015a9c1
+
+Frame 4355: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.651330877 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.651330877 seconds
+    [Time delta from previous captured frame: 0.001111616 seconds]
+    [Time delta from previous displayed frame: 0.001577149 seconds]
+    [Time since reference or first frame: 12.231799014 seconds]
+    Frame Number: 4355
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x417e (16766)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a8b [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 81, Ack: 1398, Len: 24
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 81    (relative sequence number)
+    [Next sequence number: 105    (relative sequence number)]
+    Acknowledgment number: 1398    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 259
+    [Calculated window size: 66304]
+    [Window size scaling factor: 256]
+    Checksum: 0xa56a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567726
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567726
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4353]
+        [The RTT to ACK the segment was: 0.001119243 seconds]
+        [Bytes in flight: 24]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4354]
+        [Time: 0.001111616 seconds]
+
+Frame 4356: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.651330877 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.651330877 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.231799014 seconds]
+    Frame Number: 4356
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 76
+    Identification: 0x417e (16766)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x3a8b [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 81, Ack: 1398, Len: 24
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 81    (relative sequence number)
+    [Next sequence number: 105    (relative sequence number)]
+    Acknowledgment number: 1398    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 259
+    [Calculated window size: 66304]
+    [Window size scaling factor: 256]
+    Checksum: 0xa56a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567726
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567726
+    [SEQ/ACK analysis]
+        [Bytes in flight: 24]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 24]
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4354]
+        [Time: 0.001111616 seconds]
+
+Frame 4359: 712 bytes on wire (5696 bits), 712 bytes captured (5696 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.653907269 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.653907269 seconds
+    [Time delta from previous captured frame: 0.001825267 seconds]
+    [Time delta from previous displayed frame: 0.002576392 seconds]
+    [Time since reference or first frame: 12.234375406 seconds]
+    Frame Number: 4359
+    Frame Length: 712 bytes (5696 bits)
+    Capture Length: 712 bytes (5696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 696
+    Identification: 0x417f (16767)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x381e [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 105, Ack: 1853, Len: 644
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 105    (relative sequence number)
+    [Next sequence number: 749    (relative sequence number)]
+    Acknowledgment number: 1853    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 258
+    [Calculated window size: 66048]
+    [Window size scaling factor: 256]
+    Checksum: 0xaa65 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567728
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567728
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4357]
+        [The RTT to ACK the segment was: 0.001834990 seconds]
+        [Bytes in flight: 644]
+    [PDU Size: 644]
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000002f4049a0033c50c15e8ed700...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 792742304
+                krb5_sgn_cksum: 033c50c15e8ed700f69eabc6511eec0c4a01dae83aa8ee9b...
+        GSS-API Encrypted payload (580 bytes)
+
+Frame 4360: 712 bytes on wire (5696 bits), 712 bytes captured (5696 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep 27, 2016 20:10:46.653907269 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1474978246.653907269 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 12.234375406 seconds]
+    Frame Number: 4360
+    Frame Length: 712 bytes (5696 bits)
+    Capture Length: 712 bytes (5696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ldap:gss-api:spnego-krb5]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: Dell_d0:97:59 (98:90:96:d0:97:59)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 10.31.53.59 (10.31.53.59), Dst: 10.31.53.42 (10.31.53.42)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 696
+    Identification: 0x417f (16767)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x381e [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 10.31.53.59 (10.31.53.59)
+    Destination: 10.31.53.42 (10.31.53.42)
+Transmission Control Protocol, Src Port: ldap (389), Dst Port: 35315 (35315), Seq: 105, Ack: 1853, Len: 644
+    Source port: ldap (389)
+    Destination port: 35315 (35315)
+    [Stream index: 37]
+    Sequence number: 105    (relative sequence number)
+    [Next sequence number: 749    (relative sequence number)]
+    Acknowledgment number: 1853    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 258
+    [Calculated window size: 66048]
+    [Window size scaling factor: 256]
+    Checksum: 0xaa65 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 295391422, TSecr 446567728
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 295391422
+            Timestamp echo reply: 446567728
+    [SEQ/ACK analysis]
+        [Bytes in flight: 644]
+        [TCP Analysis Flags]
+            [This frame is a (suspected) retransmission]
+                [Expert Info (Note/Sequence): Retransmission (suspected)]
+                    [Message: Retransmission (suspected)]
+                    [Severity level: Note]
+                    [Group: Sequence]
+    [PDU Size: 644]
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000002f4049a0033c50c15e8ed700...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 792742304
+                krb5_sgn_cksum: 033c50c15e8ed700f69eabc6511eec0c4a01dae83aa8ee9b...
+        GSS-API Encrypted payload (580 bytes)
+

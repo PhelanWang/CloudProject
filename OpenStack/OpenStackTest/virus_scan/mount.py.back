@@ -1,0 +1,142 @@
+#! coding=utf-8
+import logging
+from subprocess import *
+from commands import *
+import time
+import os
+import threading
+import string
+import ctypes
+logging.basicConfig(
+    level=logging.NOTSET,
+    format="[%(asctime)s] %(name)s:%(levelname)s: %(message)s"
+)
+
+
+# 挂载器
+class Mounter(object):
+
+    def __init__(self, img_path, os_name):
+        self.img_path = img_path
+        self.os_name = os_name
+
+
+    #kill已经启动的mount,根据kristen
+    def killid(self):
+        pid_str = " ps -ef |grep qemu-kvm |grep -v grep |grep kristen|awk '{print $2}'"
+        print pid_str
+        pidlist = os.popen(pid_str).read().strip().split('\n')
+        print 'pidlist'
+        print (pidlist)
+
+        for pid in pidlist:
+            if pid =='':
+                pass
+            else :
+                strs="kill -9 %s"%(pid)
+                print strs
+                os.system(strs)
+
+
+
+    def check_available(self):
+        rpt =""
+        self.killid()
+        str_size = "qemu-img info %s | grep disk |cut -d ' ' -f 3  |grep K" % self.img_path
+        print str_size
+        size = os.popen(str_size).read().strip()
+#         if(size==''):
+        if(size != ''):
+            print "disk check ok"
+            return True
+        else:
+            print "can not mount!"
+            return False
+    def mount(self):
+        # 检测磁盘大小是否有
+        check_disk = self.check_available()
+        if check_disk ==False:
+            return check_disk
+        else:
+            print 'create thread start'
+            t1=startvm(self.img_path, name='kristen01')
+            t2=startvm(self.img_path,name='kristen02')
+            t1.start()
+            t2.start()
+
+
+            print 'create thread end'
+            return True
+
+    def getReport(self):
+        flag=self.mount()
+        if(flag==False):
+            return False
+        elif flag ==True:
+            #pslist=os.popen('ps -aux | grep')
+            try :
+                pid1=os.popen("ps -ef |grep -v grep |grep qemu-kvm |grep kristen01|awk {'print $2'}").read().strip('\n')
+                print 'pid1',pid1
+                pid2=os.popen("ps -ef |grep -v grep |grep qemu-kvm |grep kristen02|awk {'print $2'}").read().strip('\n')
+                print 'pid2',pid2
+
+                port1 = os.popen("netstat -ntpl |grep  "+pid1+" |grep qemu-kvm |awk '{print $4}' |cut -d ':' -f 4" ).read()
+                 
+#                 port1 = os.popen("netstat -ntpl |grep  "+pid1+" |grep qemu-kvm |awk '{print $4}'" ).read().strip('\n').split(':')[1]
+                
+                port2 = os.popen("netstat -ntpl |grep  "+pid2+" |grep qemu-kvm |awk '{print $4}' |cut -d ':' -f 4" ).read()
+                rst = "start vm1 , VNC server running on %s "% str(port1)
+                rst = rst +'\n'
+                rst =rst.strip(' ') +"start vm2 , VNC server running on %s" % str(port2)
+                print rst
+                return rst
+            except:
+                print "throw exception on start vms "
+                return False
+            # print 'start vms success with disk listen on port %s'%str(5900)
+
+
+
+class startvm(threading.Thread):
+    def __init__(self,path,name):
+        threading.Thread.__init__(self,name=name)
+        self.path =path
+        self.thread_stop=False
+    def  run(self):
+        #while not self.thread_stop:
+        print 'start vm'
+        os.system("/usr/libexec/qemu-kvm  -name  %s  -m 2048 %s"%(self.name,self.path))
+        #time.sleep(50)
+        print 'Thread  start %s,Time %s \n'%(self.path,time.ctime())
+
+    def stop(self):
+        self.thread_stop = True
+    def getpid(self):
+        return ctypes.CDLL('libc.so.6').syscall(186)
+'''
+def test():
+    thread1=startvm("tt1")
+    thread2=startvm("tt2")
+    thread3=startvm("tt3")
+    thread1.start()
+    thread2.start()
+    thread3.start()
+    print 'pakistan'
+    time.sleep(20)
+    thread1.stop()
+    thread2.stop()
+    thread3.stop()
+
+if __name__ == "__main__":
+    logging.debug("hello")
+    pathdisk="/run/media/root/080be9a2-5944-4428-86b5-6f0e9da6269e/kvm/image/6cc1c44f-aa0a-4876-80b3-ab1a49896c47/images/5ef6324a-d688-4dee-847b-0b36cbc78c2a/d58e4ccf-dab5-44ef-a338-b41dfcc264bd"
+
+    #空磁盘
+    #pathdisk="/run/media/root/080be9a2-5944-4428-86b5-6f0e9da6269e/kvm/image/6cc1c44f-aa0a-4876-80b3-ab1a49896c47/images/4fd56f4c-1948-45b8-9692-df3c0f0986f9/0c39fd9c-78bd-4447-9aab-0db1cc8ffd65"
+    mt = Mounter(pathdisk, 'test')
+
+    #print 'thread id : ' ,ctypes.CDLL('libc.so.6').syscall(186)
+    mt.getReport()
+
+    '''
+  

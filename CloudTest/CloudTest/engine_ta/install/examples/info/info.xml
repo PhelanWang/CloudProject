@@ -1,0 +1,13 @@
+<!-- configre for getting info of cloud status  -->
+<oVirt>
+    <engine_api>
+        <!-- the right to access engine api -->
+        <url>https://localhost.localdomain/ovirt-engine/api</url>
+        <username>admin@internal</username>
+        <password>admin</password>
+        <ca_file>/etc/pki/ovirt-engine/ca.pem</ca_file>
+    </engine_api>
+    <subnets>
+    	<subnet>192.168.1.1/24</subnet>
+    </subnets>
+</oVirt>

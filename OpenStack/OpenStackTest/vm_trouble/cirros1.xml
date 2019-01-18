@@ -1,0 +1,33 @@
+<domain type="kvm">
+    <name>cirros1</name>  <!--虚拟机名称-->
+    <memory unit="MiB">1024</memory>   <!--最大内存，单位k-->
+    <currentMemory unit="MiB">1024</currentMemory>  <!--可用内存，单位k-->
+    <vcpu>2</vcpu>   <!--//虚拟cpu个数-->
+    <os>
+        <type arch="x86_64" machine="pc">hvm</type>
+        <boot dev="hd" /> <!-- 硬盘启动 -->
+        <boot dev="cdrom" />     <!--//光盘启动-->
+    </os>
+    <features>
+        <acpi />
+        <apic />
+        <pae />
+    </features>
+    <clock offset="localtime" />
+    <on_poweroff>destroy</on_poweroff>
+    <on_reboot>restart</on_reboot>
+    <on_crash>destroy</on_crash>
+    <devices>
+        <emulator>/usr/libexec/qemu-kvm</emulator>
+        <disk type="file" device="cdrom">
+            <source file="/home/qemu/cirros-disk.img"/>
+            <target dev="hdb" bus="ide" />
+        </disk>
+        <interface type="bridge">       <!--虚拟机网络连接方式-->
+            <source bridge="ovirtmgmt" />      <!--当前主机网桥的名称-->
+        </interface>
+        <input type="mouse" bus="ps2" />
+        <!--vnc方式登录，端口号自动分配，自动加1，可以通过virsh vncdisplay来查询-->
+        <graphics type="vnc" port="-1" autoport="yes" listen="0.0.0.0" keymap="en-us" />
+    </devices>
+</domain>

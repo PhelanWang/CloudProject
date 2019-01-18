@@ -1,0 +1,252 @@
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4205]
+        [Time: 0.002138874 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4205]
+        [Time: 0.002138874 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 988150831
+                        krb5_sgn_cksum: 5e78881249124362541a4559
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000003ae5fc2f5e78881249124362...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 988150831
+                        krb5_sgn_cksum: 5e78881249124362541a4559
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4237]
+        [Time: 0.001093295 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4237]
+        [Time: 0.001093295 seconds]
+
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000003ae5fc30674429258cea0a53...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 988150832
+                krb5_sgn_cksum: 674429258cea0a53ce564d9df15751a7a110948cabb64972...
+        GSS-API Encrypted payload (580 bytes)
+
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000003ae5fc30674429258cea0a53...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 988150832
+                krb5_sgn_cksum: 674429258cea0a53ce564d9df15751a7a110948cabb64972...
+        GSS-API Encrypted payload (580 bytes)
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4342]
+        [Time: 0.002101245 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(1) saslBindInProgress
+        messageID: 1
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4342]
+        [Time: 0.002101245 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 792742303
+                        krb5_sgn_cksum: c5f4a65b64437fce8015a9c1
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(2) saslBindInProgress
+        messageID: 2
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: saslBindInProgress (14)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                GSS-API Generic Security Service Application Program Interface
+                    krb5_blob: 050401ff000c000c000000002f40499fc5f4a65b64437fce...
+                        krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                        krb5_cfx_flags: 0x01
+                            .... .0.. = AcceptorSubkey: Not set
+                            .... ..0. = Sealed: Not set
+                            .... ...1 = SendByAcceptor: Set
+                        krb5_filler: ff
+                        krb5_cfx_ec: 12
+                        krb5_cfx_rrc: 12
+                        krb5_cfx_seq: 792742303
+                        krb5_sgn_cksum: c5f4a65b64437fce8015a9c1
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4354]
+        [Time: 0.001111616 seconds]
+
+Lightweight Directory Access Protocol
+    LDAPMessage bindResponse(3) success
+        messageID: 3
+        protocolOp: bindResponse (1)
+            bindResponse
+                resultCode: success (0)
+                matchedDN:
+                errorMessage:
+                serverSaslCreds: <MISSING>
+        [Response To: 4354]
+        [Time: 0.001111616 seconds]
+
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000002f4049a0033c50c15e8ed700...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 792742304
+                krb5_sgn_cksum: 033c50c15e8ed700f69eabc6511eec0c4a01dae83aa8ee9b...
+        GSS-API Encrypted payload (580 bytes)
+
+Lightweight Directory Access Protocol
+    SASL Buffer Length: 640
+    SASL Buffer
+        GSS-API Generic Security Service Application Program Interface
+            krb5_blob: 050403ff0000001c000000002f4049a0033c50c15e8ed700...
+                krb5_tok_id: KRB_TOKEN_CFX_WRAP (0x0405)
+                krb5_cfx_flags: 0x03
+                    .... .0.. = AcceptorSubkey: Not set
+                    .... ..1. = Sealed: Set
+                    .... ...1 = SendByAcceptor: Set
+                krb5_filler: ff
+                krb5_cfx_ec: 0
+                krb5_cfx_rrc: 28
+                krb5_cfx_seq: 792742304
+                krb5_sgn_cksum: 033c50c15e8ed700f69eabc6511eec0c4a01dae83aa8ee9b...
+        GSS-API Encrypted payload (580 bytes)
+

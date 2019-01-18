@@ -1,0 +1,1479 @@
+Frame 837: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:07.507455428 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221707.507455428 seconds
+    [Time delta from previous captured frame: 0.000054544 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 8.780490362 seconds]
+    Frame Number: 837
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x547e (21630)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x61c6 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34924 (34924), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34924 (34924)
+    Destination port: ssh (22)
+    [Stream index: 14]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383240881, TSecr 7454286
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383240881
+            Timestamp echo reply: 7454286
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 890: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:07.748218467 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221707.748218467 seconds
+    [Time delta from previous captured frame: 0.148544527 seconds]
+    [Time delta from previous displayed frame: 0.240763039 seconds]
+    [Time since reference or first frame: 9.021253401 seconds]
+    Frame Number: 890
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0xe053 (57427)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xd62b [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34924 (34924), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34924 (34924)
+    [Stream index: 14]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0xe065 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7454526, TSecr 3383240881
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7454526
+            Timestamp echo reply: 3383240881
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 892: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:07.748456779 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221707.748456779 seconds
+    [Time delta from previous captured frame: 0.000209082 seconds]
+    [Time delta from previous displayed frame: 0.000238312 seconds]
+    [Time since reference or first frame: 9.021491713 seconds]
+    Frame Number: 892
+    Frame Length: 87 bytes (696 bits)
+    Capture Length: 87 bytes (696 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 71
+    Identification: 0xe054 (57428)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xd62c [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34924 (34924), Seq: 22, Ack: 81, Len: 19
+    Source port: ssh (22)
+    Destination port: 34924 (34924)
+    [Stream index: 14]
+    Sequence number: 22    (relative sequence number)
+    [Next sequence number: 41    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0x267f [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7454527, TSecr 3383241122
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7454527
+            Timestamp echo reply: 3383241122
+    [SEQ/ACK analysis]
+        [Bytes in flight: 19]
+SSH Protocol
+    Encrypted Packet: 50726f746f636f6c206d69736d617463682e0a
+
+Frame 1156: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:12.819762688 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221712.819762688 seconds
+    [Time delta from previous captured frame: 0.000053584 seconds]
+    [Time delta from previous displayed frame: 5.071305909 seconds]
+    [Time since reference or first frame: 14.092797622 seconds]
+    Frame Number: 1156
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x2c45 (11333)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x89ff [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34926 (34926), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34926 (34926)
+    Destination port: ssh (22)
+    [Stream index: 15]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383246194, TSecr 7459598
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383246194
+            Timestamp echo reply: 7459598
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1214: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:13.025760122 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221713.025760122 seconds
+    [Time delta from previous captured frame: 0.096195021 seconds]
+    [Time delta from previous displayed frame: 0.205997434 seconds]
+    [Time since reference or first frame: 14.298795056 seconds]
+    Frame Number: 1214
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x16a4 (5796)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x9fdb [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34926 (34926), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34926 (34926)
+    [Stream index: 15]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0x6cbf [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7459804, TSecr 3383246194
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7459804
+            Timestamp echo reply: 3383246194
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1306: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:13.921128961 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221713.921128961 seconds
+    [Time delta from previous captured frame: 0.000060365 seconds]
+    [Time delta from previous displayed frame: 0.895368839 seconds]
+    [Time since reference or first frame: 15.194163895 seconds]
+    Frame Number: 1306
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x108c (4236)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xa5b8 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34928 (34928), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34928 (34928)
+    Destination port: ssh (22)
+    [Stream index: 16]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383247295, TSecr 7460699
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383247295
+            Timestamp echo reply: 7460699
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1377: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:14.133661687 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221714.133661687 seconds
+    [Time delta from previous captured frame: 0.000342771 seconds]
+    [Time delta from previous displayed frame: 0.212532726 seconds]
+    [Time since reference or first frame: 15.406696621 seconds]
+    Frame Number: 1377
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x2df3 (11763)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x888c [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34928 (34928), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34928 (34928)
+    [Stream index: 16]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0x32c7 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7460912, TSecr 3383247295
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7460912
+            Timestamp echo reply: 3383247295
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1442: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:14.659958144 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221714.659958144 seconds
+    [Time delta from previous captured frame: 0.000075293 seconds]
+    [Time delta from previous displayed frame: 0.526296457 seconds]
+    [Time since reference or first frame: 15.932993078 seconds]
+    Frame Number: 1442
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x0436 (1078)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xb20e [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34930 (34930), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34930 (34930)
+    Destination port: ssh (22)
+    [Stream index: 18]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383248034, TSecr 7461438
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383248034
+            Timestamp echo reply: 7461438
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1490: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:14.865985860 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221714.865985860 seconds
+    [Time delta from previous captured frame: 0.128250182 seconds]
+    [Time delta from previous displayed frame: 0.206027716 seconds]
+    [Time since reference or first frame: 16.139020794 seconds]
+    Frame Number: 1490
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x7ab6 (31414)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x3bc9 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34930 (34930), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34930 (34930)
+    [Stream index: 18]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0xe67a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7461644, TSecr 3383248034
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7461644
+            Timestamp echo reply: 3383248034
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1564: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:15.267114595 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221715.267114595 seconds
+    [Time delta from previous captured frame: 0.000064028 seconds]
+    [Time delta from previous displayed frame: 0.401128735 seconds]
+    [Time since reference or first frame: 16.540149529 seconds]
+    Frame Number: 1564
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x203c (8252)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x9608 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34932 (34932), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34932 (34932)
+    Destination port: ssh (22)
+    [Stream index: 19]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383248641, TSecr 7462045
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383248641
+            Timestamp echo reply: 7462045
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1612: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:15.474399198 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221715.474399198 seconds
+    [Time delta from previous captured frame: 0.140174808 seconds]
+    [Time delta from previous displayed frame: 0.207284603 seconds]
+    [Time since reference or first frame: 16.747434132 seconds]
+    Frame Number: 1612
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x06b2 (1714)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xafcd [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34932 (34932), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34932 (34932)
+    [Stream index: 19]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0x62ea [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7462253, TSecr 3383248641
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7462253
+            Timestamp echo reply: 3383248641
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1664: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:15.844295256 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221715.844295256 seconds
+    [Time delta from previous captured frame: 0.000065170 seconds]
+    [Time delta from previous displayed frame: 0.369896058 seconds]
+    [Time since reference or first frame: 17.117330190 seconds]
+    Frame Number: 1664
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0xac82 (44162)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x09c2 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34934 (34934), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34934 (34934)
+    Destination port: ssh (22)
+    [Stream index: 20]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383249218, TSecr 7462623
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383249218
+            Timestamp echo reply: 7462623
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1705: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:16.050092593 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221716.050092593 seconds
+    [Time delta from previous captured frame: 0.016506482 seconds]
+    [Time delta from previous displayed frame: 0.205797337 seconds]
+    [Time since reference or first frame: 17.323127527 seconds]
+    Frame Number: 1705
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x0780 (1920)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xaeff [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34934 (34934), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34934 (34934)
+    [Stream index: 20]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0x8666 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7462828, TSecr 3383249218
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7462828
+            Timestamp echo reply: 3383249218
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1763: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:16.421734365 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221716.421734365 seconds
+    [Time delta from previous captured frame: 0.000075194 seconds]
+    [Time delta from previous displayed frame: 0.371641772 seconds]
+    [Time since reference or first frame: 17.694769299 seconds]
+    Frame Number: 1763
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x91e9 (37353)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x245b [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34936 (34936), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34936 (34936)
+    Destination port: ssh (22)
+    [Stream index: 21]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383249796, TSecr 7463200
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383249796
+            Timestamp echo reply: 7463200
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1795: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:16.627520494 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221716.627520494 seconds
+    [Time delta from previous captured frame: 0.104843939 seconds]
+    [Time delta from previous displayed frame: 0.205786129 seconds]
+    [Time since reference or first frame: 17.900555428 seconds]
+    Frame Number: 1795
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x28dd (10461)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x8da2 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34936 (34936), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34936 (34936)
+    [Stream index: 21]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0xcd3f [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7463406, TSecr 3383249796
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7463406
+            Timestamp echo reply: 3383249796
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
+Frame 1879: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:18.306923288 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221718.306923288 seconds
+    [Time delta from previous captured frame: 0.000062684 seconds]
+    [Time delta from previous displayed frame: 1.679402794 seconds]
+    [Time since reference or first frame: 19.579958222 seconds]
+    Frame Number: 1879
+    Frame Length: 148 bytes (1184 bits)
+    Capture Length: 148 bytes (1184 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Sent by us (4)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: QuantaCo_f0:39:76 (00:1b:24:f0:39:76)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.117 (192.168.1.117), Dst: 192.168.1.106 (192.168.1.106)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 132
+    Identification: 0x3e9c (16028)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0x77a8 [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.117 (192.168.1.117)
+    Destination: 192.168.1.106 (192.168.1.106)
+Transmission Control Protocol, Src Port: 34938 (34938), Dst Port: ssh (22), Seq: 1, Ack: 1, Len: 80
+    Source port: 34938 (34938)
+    Destination port: ssh (22)
+    [Stream index: 22]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 81    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x84a6 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 3383251681, TSecr 7465085
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 3383251681
+            Timestamp echo reply: 7465085
+    [SEQ/ACK analysis]
+        [Bytes in flight: 80]
+SSH Protocol
+    Encrypted Packet: 474554202f20485454502f312e310d0a557365722d416765...
+
+Frame 1916: 89 bytes on wire (712 bits), 89 bytes captured (712 bits) on interface 0
+    Interface id: 0
+    Encapsulation type: Linux cooked-mode capture (25)
+    Arrival Time: Sep  6, 2018 16:15:18.513707757 CST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1536221718.513707757 seconds
+    [Time delta from previous captured frame: 0.098438575 seconds]
+    [Time delta from previous displayed frame: 0.206784469 seconds]
+    [Time since reference or first frame: 19.786742691 seconds]
+    Frame Number: 1916
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: sll:ip:tcp:ssh]
+Linux cooked capture
+    Packet type: Unicast to us (0)
+    Link-layer address type: 1
+    Link-layer address length: 6
+    Source: AsustekC_c5:3e:a3 (48:5b:39:c5:3e:a3)
+    Protocol: IP (0x0800)
+Internet Protocol Version 4, Src: 192.168.1.106 (192.168.1.106), Dst: 192.168.1.117 (192.168.1.117)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        0000 00.. = Differentiated Services Codepoint: Default (0x00)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 73
+    Identification: 0x0a13 (2579)
+    Flags: 0x02 (Don't Fragment)
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 64
+    Protocol: TCP (6)
+    Header checksum: 0xac6c [validation disabled]
+        [Good: False]
+        [Bad: False]
+    Source: 192.168.1.106 (192.168.1.106)
+    Destination: 192.168.1.117 (192.168.1.117)
+Transmission Control Protocol, Src Port: ssh (22), Dst Port: 34938 (34938), Seq: 1, Ack: 81, Len: 21
+    Source port: ssh (22)
+    Destination port: 34938 (34938)
+    [Stream index: 22]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 22    (relative sequence number)]
+    Acknowledgment number: 81    (relative ack number)
+    Header length: 32 bytes
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Nonce: Not set
+        .... 0... .... = Congestion Window Reduced (CWR): Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+    Window size value: 227
+    [Calculated window size: 29056]
+    [Window size scaling factor: 128]
+    Checksum: 0xa22a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        No-Operation (NOP)
+            Type: 1
+                0... .... = Copy on fragmentation: No
+                .00. .... = Class: Control (0)
+                ...0 0001 = Number: No-Operation (NOP) (1)
+        Timestamps: TSval 7465292, TSecr 3383251681
+            Kind: Timestamp (8)
+            Length: 10
+            Timestamp value: 7465292
+            Timestamp echo reply: 3383251681
+    [SEQ/ACK analysis]
+        [Bytes in flight: 21]
+SSH Protocol
+    Protocol: SSH-2.0-OpenSSH_7.4\r\n
+
