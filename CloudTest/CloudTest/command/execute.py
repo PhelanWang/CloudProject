@@ -63,10 +63,13 @@ def init():
     # 创建目录并授权
     os.system('mkdir /home/qemu')
     os.system('chown qemu /home/qemu')
+    os.system('setenforce 0')
     # 打开端口
     os.system('firewall-cmd --zone=public --add-port=9099/tcp --permanent')
     os.system('firewall-cmd --zone=public --add-port=8001/udp --permanent')
     os.system('firewall-cmd --reload')
+    # 拷贝client_python2.py到/home/qemu目录下
+    os.system('/usr/lib/python2.7/site-packages/CloudTest/command/client_python2.py /home/qemu')
     install_packages()
 
 
