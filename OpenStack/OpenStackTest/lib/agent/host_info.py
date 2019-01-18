@@ -14,12 +14,12 @@ def get_host_ip():
     return ip
 
 
-def get_ovrit_version():
-    line = os.popen('rpm -qa | grep ovirt-release-host-node').read()
+def get_openstack_version():
+    line = os.popen('nova-manage version').read()
     try:
-        version = re.findall(r'([0-9].[0-9])', line)[0]
+        version = '-'.join(line.strip('\n').split(' '))
     except:
-        version = '4.2'
+        version = 'unknow'
     return version
 
 # 获取虚拟机的版本信息
@@ -34,7 +34,7 @@ def get_sytem_info():
     return {
         'node_ip': get_host_ip(),
         'node_os_version': get_host_version(),
-        'node_openStack_version': get_ovrit_version()
+        'node_openStack_version': get_openstack_version()
     }
 
 
