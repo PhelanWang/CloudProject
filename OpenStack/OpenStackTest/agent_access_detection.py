@@ -16,7 +16,9 @@ if not is_load_external():
 @agent.entry("host_access_detection", version="1.0.1")
 def host_access_controll_detection(subtask_id, args):
     # 使用系统命令，列出根目录的文件访问控制权限
-    result = ''.join(os.popen("ls -lh / | awk '{print $1,$3,$4,$9}'").readlines()[1:])
+    path = args['path']
+    img_dir = '/'.join(path.split('/')[:-1])
+    result = ''.join(os.popen("ls -lh "+img_dir+" | awk '{print $1,$3,$4,$9}'").readlines()[1:])
     detail = '本次测试获取物理机中镜像文件访问控制权限。\n' \
              '列出的被测试节点的根目录访问权限，第一列的第一个字符代表文件(-)、目录(d)、链接(l)。\n' \
              '其余字符每3个一组(rwx)，第一组是文件所有者的权限，第二组是与文件所有者同一组的用户权限，第三组是与文件所有者不同组用户权限。\n' \
@@ -61,7 +63,7 @@ def vm_access_controller_detection(subtask_id, args):
 # Execute this while run this agent file directly
 if not is_load_external():
     # args = {}
-    # args['path'] = '/root/PycharmProjects/cp/96d9b1b5-2f45-4baf-8462-5a166c87a3bb'
+    # args['path'] = '/dev/cinder-volumes/volume-8a075541-c6bf-4037-97c3-91b3beb724e2'
     # vm_access_controller_detection(0, args)
     # host_access_controll_detection(0, args)
     agent.run()
