@@ -15,16 +15,18 @@ def get_host_ip():
 
 
 def get_openstack_version():
-    line = os.popen('nova-manage version').read()
     try:
+        line = os.popen('nova-manage version').read()
         version = '-'.join(line.strip('\n').split(' '))
     except:
         version = 'unknow'
     return version
 
+
 # 获取虚拟机的版本信息
 def get_architecture():
     return os.popen('uname -s').read().strip('\r\n')+'-'+os.popen('uname -i').read()
+
 
 def get_host_version():
     return os.popen('cat /etc/redhat-release').read().replace('\n', '').strip(' ').replace(' ', '-')
@@ -68,6 +70,22 @@ def get_openstack_disk():
     vdisk = {'disk': [vdisk, get_host_ip(), 9099]}
     print vdisk
     return vdisk
+
+
+def get_nfs_disk():
+    import os, json
+    mount_path = os.popen('showmount -e').read()
+    disk_path = mount_path.split('\n')[-2].split(' ')[0]
+    disks = os.popen('ls '+disk_path).read().split('\n')
+    vdisk = []
+    for disk in disks[:-1]:
+        vdisk.append([disk, disk, 'other', 'x86_64',
+                      [disk, disk, disk, disk, disk_path+'/'+disk,
+                       get_host_ip(), disk_path+'/'+disk]])
+    vdisk = {'disk': [vdisk, get_host_ip(), 9099]}
+    print(vdisk)
+    return vdisk
+
 
 def get_default_disk():
     vdisk = {'disk':
@@ -168,8 +186,6 @@ if __name__ == '__main__':
          '192.168.1.127', 9099
      ]
 }
-
-
 
 {'disk':
      [

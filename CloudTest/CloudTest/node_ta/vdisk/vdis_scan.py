@@ -69,8 +69,8 @@ def find_key_word(key_words):
 def virtual_disk_scan(args):
     import os
     import time
-    if not os.path.exists("/home/qemu/"):
-        os.mkdir("/home/qemu/")
+    if not os.path.exists("/home/qemu"):
+        os.mkdir("/home/qemu")
         os.system("chown qemu /home/qemu")
         os.system("chmod 777 /home/qemu")
     os.system('rm /home/qemu/virtio_blk.log')
