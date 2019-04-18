@@ -23,9 +23,6 @@
             <source file="/home/qemu/cirros-disk.img"/>
             <target dev="hdb" bus="ide" />
         </disk>
-        <interface type="bridge">       <!--虚拟机网络连接方式-->
-            <source bridge="ovirtmgmt" />      <!--当前主机网桥的名称-->
-        </interface>
         <input type="mouse" bus="ps2" />
         <!--vnc方式登录，端口号自动分配，自动加1，可以通过virsh vncdisplay来查询-->
         <graphics type="vnc" port="-1" autoport="yes" listen="0.0.0.0" keymap="en-us" />

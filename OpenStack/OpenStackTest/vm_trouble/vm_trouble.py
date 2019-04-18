@@ -19,25 +19,14 @@ def modify_to_root():
 
 
 def execute_command(cmd):
-    # print cmd
-    child = pexpect.spawn(cmd)
-    conf = ConfigParser.ConfigParser()
-    conf.read('lib.agent.ctest.conf')
-    username = conf.get('virsh', 'username', 'admin')
-    password = conf.get('virsh', 'password', 'admin')
-    time.sleep(0.1)
-    child.sendline(username)
-    child.sendline(password)
-    # print child.read()
-    return child.readlines()
+    return os.popen(cmd).readlines()
 
 
 # 获取虚拟机信息
 def get_info():
     data = ''
-    result = execute_command('virsh list')[4:-1]
-    # result = child.readlines()[4:-1]
-    # result = child.readlines()[2:-1]
+    result = execute_command('virsh list')
+    result = result[2:-1]
     vms_info = []
     for line in result:
         line_list = list(set(line.strip(' \r\n').split(' ')))
@@ -45,8 +34,7 @@ def get_info():
         vms_info.append(line_list)
 
     for vm_info in vms_info:
-        result = execute_command('virsh dommemstat %s' % vm_info[1])[2:]
-        # result = child.readlines()[2:]
+        result = execute_command('virsh dommemstat %s' % vm_info[1])
         result = reduce(lambda a, b: a + b, map(lambda s: s.replace('\r\n', '\n'), result), '虚拟机名称: %s，虚拟机信息如下:\n' % vm_info[2])
         data += result.strip('\r\n')+'\n'
     hyper_infor = 'hypervisor结果如下:\n'
@@ -109,6 +97,7 @@ def execute_test():
     # replace_image_path('vm_trouble/cirros2.xml')
     # modify_to_root()
     copy_image()
+    end_vms()
     start_vms()
     before_data = get_info()
     shutdown_one_vm()

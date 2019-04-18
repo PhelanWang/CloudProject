@@ -1,4 +1,7 @@
 # coding: utf-8
+import json
+
+
 def is_load_external():
     return globals().has_key('AGENT_LOADER')
 

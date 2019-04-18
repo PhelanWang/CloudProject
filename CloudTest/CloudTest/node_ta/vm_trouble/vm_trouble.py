@@ -109,6 +109,7 @@ def execute_test():
     # replace_image_path('vm_trouble/cirros2.xml')
     # modify_to_root()
     copy_image()
+    end_vms()
     start_vms()
     before_data = get_info()
     shutdown_one_vm()
