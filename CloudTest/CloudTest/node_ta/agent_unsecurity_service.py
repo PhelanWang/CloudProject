@@ -28,7 +28,7 @@ def my_unsecurity_service_testing(subtask_id,args):
     import time, os
     from sec_network.pyTimer import Pysettimer
 
-    pid = os.popen("lsof -i:8001 | grep python | awk '{print $1}'").read().strip(' \n')
+    pid = os.popen("lsof -i:8001 | grep python | awk '{print $2}'").read().strip(' \n')
     if pid:
         os.system('kill -9 '+pid)
 

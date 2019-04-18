@@ -30,7 +30,7 @@ def my_unsecurity_service_testing(subtask_id,args):
 
     # Get value of global K-V database item "engine-ip". see get_global(), set_global()
     #engine_ip=agent.get_global("engine-ip")
-    pid = os.popen("lsof -i:8001 | grep python | awk '{print $1}'").read().strip(' \n')
+    pid = os.popen("lsof -i:8001 | grep python | awk '{print $2}'").read().strip(' \n')
     if pid:
         os.system('kill -9 '+pid)
 #     client=Pysettimer(cli.sendmessage, "Hello World")
