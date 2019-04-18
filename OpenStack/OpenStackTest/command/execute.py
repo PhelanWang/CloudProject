@@ -56,6 +56,8 @@ def install_packages():
 
 
 def init():
+    os.chdir('/usr/lib/python2.7/site-packages/OpenStackTest/command/')
+    os.system('./openstack_package.sh')
     # 创建目录并授权
     os.system('mkdir /home/qemu')
     os.system('chown qemu /home/qemu')
@@ -65,7 +67,7 @@ def init():
     os.system('firewall-cmd --zone=public --add-port=8001/udp --permanent')
     os.system('firewall-cmd --reload')
     # 拷贝client_python2.py到/home/qemu目录下
-    os.system('/usr/lib/python2.7/site-packages/OpenStackTest/command/client_python2.py /home/qemu')
+    os.system('cp /usr/lib/python2.7/site-packages/OpenStackTest/command/client_python2.py /home/qemu')
     install_packages()
 
 
@@ -83,9 +85,6 @@ def start_openstack_test():
     write_param(param_dict)
     sys.path.append('/usr/lib/python2.7/site-packages/OpenStackTest')
     os.chdir('/usr/lib/python2.7/site-packages/OpenStackTest')
-
-    os.chdir('/usr/lib/python2.7/site-packages/OpenStackTest/command/')
-    os.system('./openstack_package.sh')
 
     os.system('python agent_loader.py')
 
