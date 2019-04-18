@@ -18,12 +18,14 @@ def process_parameter(param=None):
     try:
         param = (''.join(param[1:])).split('--')
         param_dict = {}
-        if len(param) >= 4:
+        if len(param) >= 1:
             for item in param:
                 if '=' in item:
                     (key, value) = item.split('=')
                     param_dict[key] = value
-            if param_dict.has_key('client_ip') and param_dict.has_key('user_name') and param_dict.has_key('pass_word'):
+            if param_dict.has_key('client_ip'):
+                param_dict['user_name'] = 'admin'
+                param_dict['pass_word'] = 'admin'
                 return param_dict
             else:
                 sys.exit(0)
@@ -54,7 +56,7 @@ def install_packages():
     # if not_install():
     print("初始化安装依赖包. . .\n")
     packages = ['pexpect==2.4', 'dnspython==1.12.0', 'Flask==1.0.2', 'Flask-RESTful==0.3.6',
-                'numpy', 'ovirt-engine-sdk-python==4.2.7']
+                'numpy', 'ovirt-engine-sdk-python==4.2.7', 'boto']
     for item in packages:
         os.system('pip install --no-index -f ./packages '+item)
 
@@ -68,6 +70,9 @@ def init():
     os.system('firewall-cmd --zone=public --add-port=9099/tcp --permanent')
     os.system('firewall-cmd --zone=public --add-port=8001/udp --permanent')
     os.system('firewall-cmd --reload')
+    # 设置密码
+    os.system('/usr/bin/expect /usr/lib/python2.7/site-packages/CloudTest/command/set_pass_word.sh')
+
     # 拷贝client_python2.py到/home/qemu目录下
     os.system('/usr/lib/python2.7/site-packages/CloudTest/command/client_python2.py /home/qemu')
     install_packages()
