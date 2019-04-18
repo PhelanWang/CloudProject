@@ -123,7 +123,7 @@ def mem_quchong(v_id1, v_id2):
 
     head_line = "虚拟机进程号为:" + str(v_id1) + " " + "虚拟机名为:" + str(s1) + "\n" + \
                 "虚拟机进程号为:" + str(v_id2) + " " + "虚拟机名为:" + str(s2) + \
-                "的交叉页面地址如下：\n"
+                "\n的交叉页面地址如下：\n"
     xieci.writelines(head_line)
     report_lines.append(head_line)
 
@@ -152,8 +152,6 @@ def mem_quchong(v_id1, v_id2):
 
 if __name__ == '__main__':
     print memory_scan()
-
-
 
 
 

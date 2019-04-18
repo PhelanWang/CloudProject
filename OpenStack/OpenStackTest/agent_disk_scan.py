@@ -102,11 +102,11 @@ def my_cross_memory(subtask_id, args):
     from memory_scan.memory_cross import memory_scan
     (report, state) = memory_scan()
     if not state:
-        detail = '本次测试获取虚拟机进程空间的内存地址，并进行检测。'\
+        detail = '本次测试获取虚拟机进程空间的内存地址，并进行检测。\n'\
                  '检测运行的虚拟机之间是否有交叉的内存页面，若发现交叉内存页面，则将部分页面地址列出来。\n' \
                  '本次运行测试功能失败!'
     else:
-        detail = '本次测试获取虚拟机进程空间的内存地址，并进行检测。'\
+        detail = '本次测试获取虚拟机进程空间的内存地址，并进行检测。\n'\
                  '隔离检测运行的虚拟机之间是否有交叉的内存页面，若发现交叉内存页面，则将部分页面地址列出来。\n' \
                  '本次运行测试功能成功!'
         if report == []:
