@@ -32,8 +32,8 @@ def mmount_test(subtask_id, args):
     print args
     try:
         disk_path = args["path"]
-        disk_name = args["name"]
-        # disk_type = args["type"]
+        # disk_name = args["name"]
+        disk_type = args["type"]
     except:
         print "can't get args!"
         

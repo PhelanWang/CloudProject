@@ -26,7 +26,7 @@ def mmount_test(subtask_id,args):
     print args
     try:
         disk_path = args["path"]
-        disk_name = args["name"]
+        # disk_name = args["name"]
         # disk_type = args["type"]
     except:
         print "can't get args!"
@@ -61,9 +61,9 @@ def mmount_test(subtask_id,args):
 
 # Execute this while run this agent file directly
 if not is_load_external():
-#     args = {}
-#     args["path"] = '/root/share/cb7e72a4-b396-4e24-bbb2-717e0bf62e49/images/cdab97a6-da5e-4103-aa24-9d9cf84440e3/7b2465ac-d3b2-4a79-b384-2c73bfb27521'
+    args = {}
+    args["path"] = '/root/vm1'
 #     args["name"]  = '7b2465ac-d3b2-4a79-b384-2c73bfb27521'
-#     mmount_test(0, args)
+    mmount_test(0, args)
     # Run agent
-    agent.run()
+    # agent.run()
