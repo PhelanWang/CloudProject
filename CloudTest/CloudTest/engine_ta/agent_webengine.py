@@ -59,7 +59,7 @@ def my_webengine(subtask_id, args):
 # Execute this while run this agent file directly
 if not is_load_external():
     # Run agent
-    agent.run()
-    # args = {}
-    # args['ip'] = "localhost"
-    # my_webengine(0, args)
+    # agent.run()
+    args = {}
+    args['ip'] = "localhost"
+    my_webengine(0, args)

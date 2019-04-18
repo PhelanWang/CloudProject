@@ -6,11 +6,9 @@ import sys
 
 convention_used = '''
 使用方式
-node_start/engine_start --client_ip=xxx.xxx.xxx.xxx --user_name=xxx --pass_word=xxx
+node_start/engine_start --client_ip=xxx.xxx.xxx.xxx
 engine端使用engine_start, node端使用node_start
 client_ip: 客户端的ip地址
-user_name: 管理oVirt平台的用户名
-pass_word: 用户名对应的密码
 '''
 
 
@@ -51,9 +49,9 @@ def not_install():
     return flag
 
 
-def install_packages():
+def install_packages(type):
     os.chdir('/usr/lib/python2.7/site-packages/CloudTest/command')
-    # if not_install():
+
     print("初始化安装依赖包. . .\n")
     packages = ['pexpect==2.4', 'dnspython==1.12.0', 'Flask==1.0.2', 'Flask-RESTful==0.3.6',
                 'numpy', 'ovirt-engine-sdk-python==4.2.7', 'boto']
@@ -61,7 +59,21 @@ def install_packages():
         os.system('pip install --no-index -f ./packages '+item)
 
 
-def init():
+def node_init():
+    os.chdir('/usr/lib/python2.7/site-packages/CloudTest/command/')
+    os.system('./node_package.sh')
+    # 设置密码
+    os.system('./set_pass_word.sh')
+    init('node')
+
+
+def engine_init():
+    os.chdir('/usr/lib/python2.7/site-packages/CloudTest/command/')
+    os.system('./engine_package.sh')
+    init('engine')
+
+
+def init(type):
     # 创建目录并授权
     os.system('mkdir /home/qemu')
     os.system('chown qemu /home/qemu')
@@ -70,12 +82,10 @@ def init():
     os.system('firewall-cmd --zone=public --add-port=9099/tcp --permanent')
     os.system('firewall-cmd --zone=public --add-port=8001/udp --permanent')
     os.system('firewall-cmd --reload')
-    # 设置密码
-    os.system('/usr/bin/expect /usr/lib/python2.7/site-packages/CloudTest/command/set_pass_word.sh')
 
     # 拷贝client_python2.py到/home/qemu目录下
-    os.system('/usr/lib/python2.7/site-packages/CloudTest/command/client_python2.py /home/qemu')
-    install_packages()
+    os.system('cp /usr/lib/python2.7/site-packages/CloudTest/command/client_python2.py /home/qemu')
+    install_packages(type)
 
 
 def write_param(param_dict, node_name):
@@ -94,6 +104,7 @@ def start_node():
     write_param(param_dict, 'node_ta')
     sys.path.append('/usr/lib/python2.7/site-packages/CloudTest/node_ta')
     os.chdir('/usr/lib/python2.7/site-packages/CloudTest/node_ta')
+
     os.system('python agent_loader.py')
 
 
@@ -102,6 +113,7 @@ def start_engine():
     write_param(param_dict, 'engine_ta')
     sys.path.append('/usr/lib/python2.7/site-packages/CloudTest/engine_ta')
     os.chdir('/usr/lib/python2.7/site-packages/CloudTest/engine_ta')
+
     os.system('python agent_loader.py')
 
 

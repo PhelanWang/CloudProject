@@ -83,6 +83,10 @@ def start_openstack_test():
     write_param(param_dict)
     sys.path.append('/usr/lib/python2.7/site-packages/OpenStackTest')
     os.chdir('/usr/lib/python2.7/site-packages/OpenStackTest')
+
+    os.chdir('/usr/lib/python2.7/site-packages/OpenStackTest/command/')
+    os.system('./openstack_package.sh')
+
     os.system('python agent_loader.py')
 
 

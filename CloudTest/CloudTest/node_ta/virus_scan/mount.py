@@ -74,8 +74,12 @@ class Mounter(object):
                 port1 = os.popen("netstat -ntpl |grep  "+pid1+" |grep qemu-kvm |awk '{print $4}' |cut -d ':' -f 4" ).read()
                 port2 = os.popen("netstat -ntpl |grep  "+pid2+" |grep qemu-kvm |awk '{print $4}' |cut -d ':' -f 4" ).read()
                 
-                port1 = port1.strip('\n')
-                port2 = port2.strip('\n')
+                port1 = port1.strip(' \n')
+                port2 = port2.strip(' \n')
+
+                print 'port1', port1
+                print' port2', port2
+
                 rst = "对磁盘镜像启动第一个虚拟机 vm1"
                 if port1 != '':
                     rst += " 启动成功, 虚拟机 VNC 服务运行在端口 %s。 \n" % str(port1)

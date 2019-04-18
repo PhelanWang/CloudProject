@@ -12,7 +12,8 @@ setup(
         "console_scripts": [
             "node_start = CloudTest.command.execute:start_node",
             "engine_start = CloudTest.command.execute:start_engine",
-            "cloud_test_init = CloudTest.command.execute:init"
+            "cloud_node_init = CloudTest.command.execute:node_init",
+            "cloud_engine_init = CloudTest.command.execute:engine_init"
         ]
     }
 )
